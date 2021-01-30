@@ -20,7 +20,7 @@ body {
 	width: 35vw;
 	height: 35vw;
 	border-radius: 50%;
-	background-color: rgb(150, 0, 150);
+	background-color: rgb(150, 60, 150);
 	box-shadow: 1px 1px 3px black;
 	display: flex;
 	justify-content: center;
@@ -29,8 +29,8 @@ body {
 
 @media (orientation: portrait) {
 	.container {
-		width: 40vh;
-		height: 40vh;
+		width: 90vw;
+		height: 90vw;
 	}
 }
 
@@ -48,7 +48,7 @@ input, select {
 	margin: 4px 0 4px 0;
 	background-color: rgb(235, 180, 235);
 	border: none;
-	min-width: 100%;
+	width: 100%;
 	box-shadow: 1px 1px 3px black;
 	border-radius: 5px;
 }
