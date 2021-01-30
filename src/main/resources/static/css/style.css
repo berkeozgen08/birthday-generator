@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+	font-family: "Poppins";
+	font-weight: 400;
+	box-sizing: border-box;
+}
+
+body {
+	background: radial-gradient(rgb(75, 0, 75), rgb(100, 0, 100));
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 35vw;
+	height: 35vw;
+	border-radius: 50%;
+	background-color: rgb(150, 0, 150);
+	box-shadow: 1px 1px 3px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (orientation: portrait) {
+	.container {
+		width: 50vh;
+		height: 50vh;
+	}
+}
+
+.inputs {
+	width: 75%;
+	height: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+input, select {
+	padding: 4px;
+	margin: 4px 0 4px 0;
+	background-color: rgb(235, 180, 235);
+	border: none;
+	min-width: 100%;
+	box-shadow: 1px 1px 3px black;
+	border-radius: 5px;
+}
+
+input:focus, select:focus {
+	outline: none;
+}
+
+input:hover:not(:disabled), select:hover, button:hover {
+	background-color: rgba(235, 180, 235, 0.9);
+}
+
+input[type=button]:not(:disabled), button, select {
+	cursor: pointer;
+}
+
+input[type=button]:active, button:active {
+	position: relative;
+	top: 1px;
+	left: 1px;
+	box-shadow: none;
+}
+
+.languages {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 4px;
+}
+
+button {
+	color: inherit;
+	background-color: rgb(235, 180, 235);
+	padding: 1px 4px 1px 4px;
+	text-decoration: none;
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px black;
+	outline: none;
+	border: none;
+}
