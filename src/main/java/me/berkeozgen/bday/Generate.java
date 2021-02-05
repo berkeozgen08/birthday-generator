@@ -29,8 +29,12 @@ public class Generate {
 		if (content == null) {
 			return null;
 		} else {
-			bdaymsg = bdaymsg.substring(0, bdaymsg.length() - 1) +
-				" " + to + bdaymsg.substring(bdaymsg.length() - 1);
+			if (!bdaymsg.equals("")) {
+				bdaymsg = bdaymsg.substring(0, bdaymsg.length() - 1) +
+					" " + to + bdaymsg.substring(bdaymsg.length() - 1);
+			} else {
+				bdaymsg = to;
+			}
 			return content
 				.replaceAll("__bdaymsg__", bdaymsg)
 				.replaceAll("__msg__", msg);
